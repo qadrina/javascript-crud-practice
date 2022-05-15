@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: plum no-repeat fixed;
+    /* background-image: none;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: bisque; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+table {
+    width: 85%;
+    margin: 40px auto;
+    background: antiquewhite;
+    border-radius: 10px;
+}
+
+table.list {
+    text-align: center;
+    width: 100%;
+}
+
+td {
+    border: 1px solid rgb(200, 120, 97);
+    border-radius: 10px;
+    text-align: left;
+    padding: 8px 15px;
+    margin: 5px;
+    background-color: beige;
+}
+
+tr:nth-child(even), table.list thread> tr {
+    background-color: rgb(200, 120, 97);
+}
+
+input[type="text"], input[type="number"] {
+    width: 91%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+input[type="submit"], input[type="reset"] {
+    background-color: antiquewhite;
+    padding: 6px 12px;
+    margin: 15px 0 10px;
+    display: inline-block;
+    /* border: 1px solid black; */
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: salmon;
+}
+
+input[type="reset"]:hover {
+    background-color: salmon;
+}
+
+button {
+    background-color: antiquewhite;
+    padding: 6px 12px;
+    margin: 15px 0 10px;
+    display: inline-block;
+    /* border: 1px solid black; */
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: salmon;
+}
+
+.center {
+    margin: auto;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 49%;
+    padding: 10px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/* responsive */
+@media screen and (max-width:600px) {
+     table {
+        width: 100%;
+    }
+    .column {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:800px) and (min-width:601px) {
+    table {
+       width: 85%;
+   }
+   .column {
+       width: 100%;
+   }
+   td {
+       margin: auto;
+   }
+
+}
